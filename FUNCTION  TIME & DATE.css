@@ -1,0 +1,12 @@
+#item{
+    width:40vw;
+    height:100px;
+    background-color:silver;
+    margin-left:30%;
+    box-shadow:10px 10px 12px;
+    color:red;
+}
+h1{
+    text-align:center;
+    color:rgb(141, 44, 44);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="FUNCTION  TIME & DATE.css">
+</head>
+<body>
+    <h1>Function for calculating  current Time & Date</h1>
+
+    <div id="mylist" style="margin-left:35% ; margin-top:60px;">
+        <button onclick="startTime()">start Time</button>
+        <button onclick="stopTime()">stop Time</button>
+       </div>
+       <div id="item">
+       </div>
+    <script>
+        var intervalid;
+        //get CurrentDateTime();
+        function startTime(){ 
+        intervalid=setInterval(getCurrentDateTime,1000);
+       }
+       function stopTime(){
+        clearInterval(intervalid);
+       }
+       function getCurrentDateTime(){
+        document.getElementById("item").innerHTML=new Date();
+       }
+    </script>
+    
+   <script src="FUNCTION TIME & DATE.js"></script>
+    
+</body>
+</html>
